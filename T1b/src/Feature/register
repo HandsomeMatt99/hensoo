@@ -1,0 +1,12 @@
+Feature: Register on the website
+
+  Scenario: Registration
+
+    Given Im on the registration website
+    When I choose my gender
+    And I fill in my first name
+    And I fill in my last name
+    And I fill in my email
+    And I fill in my password
+    And I press Sign in button
+    Then the website loads index page with me signed in
